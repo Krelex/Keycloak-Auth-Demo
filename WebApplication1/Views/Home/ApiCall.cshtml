@@ -1,0 +1,25 @@
+﻿@using WebAppDemo.Models;
+
+@model  List<WeatherForecastModel>;
+
+<p>Respone from api <b>@ViewBag.ApiUser</b> :</p>
+
+<table style="width:100%">
+	@{ 
+		foreach (var item in Model)
+		{
+		<tr>
+			<td>
+				Opis: @item.Summary
+			</td>
+			<td>
+				Datum: @item.Date.ToShortDateString()
+			</td>
+			<td>
+				Temperatura u C: @item.TemperatureC
+			</td>
+		</tr>
+		}
+	}
+</table>
+

@@ -1,0 +1,12 @@
+﻿@using WebAppDemoSSO.Models;
+
+@model PersonInfo;
+
+<li style="float: right">@Html.ActionLink("Log Off", "LogOff", "Home")</li>
+
+<h2>User info:</h2>
+
+<p><span>Ime:</span> @Model.FirstName</p>
+<p><span>Prezime:</span> @Model.LastName</p>
+<p><span>mail:</span> @Model.Email</p>
+<p><span>OIB:</span> @Model.OIB</p>
